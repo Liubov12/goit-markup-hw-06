@@ -888,7 +888,6 @@ input,textarea{
     
 .flex-clients{
     width: 170px;
-    margin-left: 0px;   
 }
 
 
@@ -1006,7 +1005,7 @@ color:var(--accent-color);
 .link-flex ul li:focus{
     background-color: var(--accent-color);
 }
-.social-link.instagram{
+.site.instagram{
     display: inline-block;
     width:44px;
     height: 44px;
@@ -1017,7 +1016,7 @@ color:var(--accent-color);
     background-position: center;
     border-radius: 50%;
 }
-.social-link.twitter{
+.site.twitter{
     display: inline-block;
     width:44px;
     height: 44px;
@@ -1028,7 +1027,7 @@ color:var(--accent-color);
     background-position: center;
     border-radius: 50%;
 }
-.social-link.facebook{
+.site.facebook{
     display: inline-block;
     width:44px;
     height: 44px;
@@ -1039,7 +1038,7 @@ color:var(--accent-color);
     background-position: center;
     border-radius: 50%;
 }
-.social-link.linkedin{
+.site.linkedin{
     display: inline-block;
     width:44px;
     height: 44px;
@@ -1058,7 +1057,7 @@ color:var(--accent-color);
 }
 .button-flex{
     margin-top: 72px;
-    margin-bottom: 30px ;
+   
 
 }
 .footer-input{
