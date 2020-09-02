@@ -18,7 +18,7 @@ html{
     box-sizing: inherit;
 }
 body{
-
+    
     background: var(--white-color);
     color: var(--primery-text-color);
     font-family: 'Roboto', sans-serif;
@@ -32,12 +32,12 @@ ul{
 }
 .container{
     margin-left: auto;
-     margin-right: auto;
-     width:1200px;
-     padding-left: 15px;
-     padding-right: 15px;
-     align-items: center;
-     justify-content: center;
+    margin-right: auto;
+    width:1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: center;
  }
 /* цвет основного текста #212121 */
 
@@ -225,12 +225,13 @@ ul{
 /* modal */
 .backdrop{
     position: relative;
+    
     top:0;
     left:0;
     width: 100%;
     height: 100%;
     background-color:rgba(0, 0, 0, 0.2);
-  
+    opacity: 1;
     transition: 250ms cubic-bezier(0.4,0,0.2,1);
     padding:93 15 94 15 px;
     overflow-y:scroll;
@@ -246,7 +247,7 @@ ul{
     padding:40px;
     top:50%;
     left:50%;
-   
+    z-index:10;
     width: 528px;
     height: 581px;
     background: #FFFFFF;
@@ -263,7 +264,7 @@ ul{
     right: 8px;
     width: 30px;
     height: 30px;
-
+   
     
     background-repeat: no-repeat;
     border-radius:50%;
@@ -410,6 +411,11 @@ ul{
     transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
+.form-input:checked+.modal-icon{
+
+    fill:var(--accent-color);
+    border-color: #2196f3;
+}
 .form-field{
     display: inline-block;
     display: flex;
@@ -451,6 +457,17 @@ ul{
     cursor: pointer;
 }
 /* checkbox */
+.checkbox{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.check-field{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    
+}
 .form-check{
     margin-top: 20px;
     margin-left: 10px;
@@ -467,7 +484,13 @@ ul{
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.check-field:checked+.icon-check {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    background-image: url(../img/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
 .modal-icon{
     position: absolute;
     top:29px;
@@ -477,6 +500,10 @@ ul{
     fill:currentColor;
     transition: 250ms cubic-bezier(0.4,0,0.2,1);
 }
+.modal-icon:hover,
+.modal-icon:focus{
+    fill:var(--accent-color)
+}
 .contract{
     color:var(--accent-color)
 }
@@ -485,6 +512,7 @@ ul{
     border-radius: 4px;
     padding: 10px 55px;
     min-width:200px;
+    margin-top: 30px;
     color:var(--white-color);
     background-color: var(--accent-color);
     box-shadow:0px 4px 4px rgba(0,0,0,0.15);
@@ -511,8 +539,13 @@ input,textarea{
     padding: 12px 16px 12px 16px;
     border:1px solid rgba(33,33,33,0.2);
     border-radius: 4px;
-    
+    color:rgba(117, 117, 117, 0.5);
 }
+.form-text:focus{
+    color:black
+}
+
+
 .feature-list{
     display: flex;
     margin-left: auto;
@@ -863,11 +896,13 @@ input,textarea{
 
 /* footer */
 footer{    
-    background: #2F303A;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
+
+width: 1600px;
+height: 252px;
+
+background: #2F303A;    
 }
+    
 .footer-logo:hover,
 .footer-logo:focus{
     color:var(--accent-color);
@@ -943,7 +978,6 @@ color:var(--accent-color);
 /* footer-flex */
 .footer-flex{
     display: flex;
-    margin-left: 29px;
 }
 
 .logo-flex{
@@ -1023,21 +1057,45 @@ color:var(--accent-color);
     margin-bottom: 30px ;
 
 }
+.footer-input{
+    margin-right:93px;
+    margin-top:20px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+    padding-left: 16px;
+    margin-right: 12px;
+    
+    background-color: transparent;
+}
+
 
 .button.footer{
     position: relative;
     margin-top: 20px;
-    
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .button.footer::after{
     content: "";
     position: absolute;
     width: 24px;
     height: 24px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    margin-right: 28px;
-    margin-left: 10px;
+    top: 13px;
+    right: 28px;
+   
     background-repeat: no-repeat;
     background-image: url("../img/icon.svg");
     background-size: contain;
