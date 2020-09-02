@@ -455,8 +455,6 @@ li:focus{
 /* подвал сайта  */
 footer{
 
-    width: 1600px;
-    height: 252px;
     background: #2F303A;
 }
 .footer-logo:hover,
@@ -489,7 +487,7 @@ footer{
     transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.adress{
+.address{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -499,6 +497,7 @@ footer{
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none;
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 }
@@ -608,8 +607,8 @@ footer{
 .footer-title:focus{
     color:var(--accent-color);
 }
-.adress:hover,
-.adress:focus{
+.address:hover,
+.address:focus{
     color:var(--accent-color);
 }
 
@@ -625,17 +624,26 @@ footer{
 }
     
 .logo-flex{
-    margin-top: 50px;
-    margin-right: 147px;
-    margin-bottom: 69px;
+    margin-top: 60px;
+    margin-right: 70px;
+    margin-bottom: 60px;
 }
 .address{
     margin-top:20px ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+
+    letter-spacing: 0.03em;
+
+    color:var(--white-color);
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .footer{
-    margin-top: 72px;
-    margin-right: 155px;
-    margin-bottom: 36px;
+    margin-top: 75px;
+    margin-right: 93px;
 }
 
 .footer ul li:hover,
@@ -644,9 +652,12 @@ footer{
 }
 
 .button-flex{
-    display: flex;
+  
     margin-top: 72px;
     margin-bottom: 30px ;
+}
+.form-footer{
+    display: flex;
 }
 .footer-input{
     margin-right:93px;
@@ -660,6 +671,8 @@ footer{
     box-sizing: border-box;
     
     padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-right: 12px;
     
     background-color: transparent;

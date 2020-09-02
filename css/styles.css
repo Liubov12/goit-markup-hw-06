@@ -18,13 +18,11 @@ html{
     box-sizing: inherit;
 }
 body{
-    
     background: var(--white-color);
     color: var(--primery-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing:0.03em;
     text-decoration: none;
-
 }
 ul{
    
@@ -275,6 +273,10 @@ ul{
     align-items: flex-end;
   
 }
+.modal-button:hover,
+.modal-button:focus{
+    fill:var(--accent-color)
+}
 .modal-svg{
     position: absolute;
     display:inline-block;
@@ -398,7 +400,12 @@ ul{
     width:100%
 }
 
-
+.form-modal:focus-within >.form-input{
+    border-color:var(--accent-color);
+}
+.form-modal:focus-within> .modal-icon{
+    fill:var(--accent-color)
+}
 .form-input{
     position: relative;
     cursor: pointer;
@@ -425,8 +432,10 @@ ul{
     fill:currentColor;
    
 }
-.form-field:focus-within>.modal-icon{
-    color:var(--accent-color)
+
+.focus:focus-within{
+    color:var(--accent-color);
+    border-color:var()var(--accent-color)
 }
 .comment{
     cursor: pointer;
@@ -869,20 +878,16 @@ input,textarea{
 
 .test-container ul{ 
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     justify-content: center;
 }
     
 .clients {
     display: flex;
     flex-wrap: wrap;
-    margin:-15px;
 }
     
 .flex-clients{
     width: 170px;
-    margin: 15px;
     margin-left: 0px;   
 }
 
@@ -897,8 +902,7 @@ input,textarea{
 /* footer */
 footer{    
 
-width: 1600px;
-height: 252px;
+
 
 background: #2F303A;    
 }
@@ -982,7 +986,7 @@ color:var(--accent-color);
 
 .logo-flex{
     margin-top: 50px;
-    margin-right: 147px;
+    margin-right: 70px;
     margin-bottom: 69px;
 }
 .address{
@@ -990,7 +994,7 @@ color:var(--accent-color);
 }
 .link-flex{
     margin-top: 72px;
-    margin-right: 155px;
+    margin-right: 93px;
     margin-bottom: 36px;
 }
 
@@ -1069,12 +1073,16 @@ color:var(--accent-color);
     box-sizing: border-box;
     
     padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-right: 12px;
     
     background-color: transparent;
 }
 
-
+.form-footer{
+    display: flex;
+}
 .button.footer{
     position: relative;
     margin-top: 20px;
