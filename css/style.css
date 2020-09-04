@@ -214,13 +214,23 @@ ul{
     color:var(--second-primery-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
    }
-.pin{
-       width: 16px;
-       height: 12px;
-       margin-right: 10px;
-       vertical-align: middle;
-   
-   }
+.pin-mail{
+    position: relative;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+.pin-phone{
+    position: relative;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
    /* рассположение контента в heder */
    
 .contacts{
